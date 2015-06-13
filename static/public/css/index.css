@@ -1,0 +1,9 @@
+ul{list-style: none;padding-left: 0;color: #8A8A8A;font-size: 14px;}
+.room-box{margin-top: 100px;}
+.navbar{background: #222222;border: none;}
+.footer{border-top: 1px solid #CCC;padding-top: 20px;margin-top: 60px;}
+
+@media screen and (max-width:568px){
+	.footer{display: none;}
+	.room-box{margin-top: 80px;}
+}

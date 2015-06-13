@@ -1,0 +1,55 @@
+
+<div class="panel panel-default room">
+	<div class="panel-heading room-header">
+		<span>Ychart</span>
+		<span class="menu-icon glyphicon glyphicon-th-list"
+		 ng-click="showUserList()"></span>
+	</div>
+	<div class="panel-body">
+		<div class="messages col-md-10" auto-scroll-to-bottom>
+			<div ng-repeat="data in messages track by $index">
+				<span class="message-time">{{data.time}}</span>
+				<span class="user-name">{{data.userName}}：</span>
+				<p><span>{{data.message}}</span></p>
+			</div>
+		</div>
+		<div class="col-md-2 board">
+			<div class="border-line">
+				<h2>群公告</h2>
+				<p>
+					Ycharts测试版，欢迎大家提出bug及需求，有时间会慢慢完善。
+				</p>
+			</div>
+		</div>
+		<div class="col-md-2 userList">
+			<h4>在线人数{{userCount}}人</h4>
+			<ul>
+				<li ng-repeat="user in userList track by $index">
+					<span>{{user}}</span>
+					<i class="user-icon">头像</i>
+				</li>
+			</ul>
+		</div>
+		<div class="form-group" ng-controller="messageCreatorCtrl">
+			<textarea class="message-input col-md-10 col-sm-12 col-xs-12" placeholder="Ctrl+Enter to quick send" 
+			ctrl-enter-break-line="createMessage()" ng-model="newMessage"></textarea>
+		</div>
+	</div>
+	<div class="user-box" ng-class="{true: 'active', false: 'inactive'}[showList]">
+		<div>
+			<h2>群公告</h2>
+			<p>
+				Ycharts测试版，欢迎大家提出bug及需求，有时间会慢慢完善。
+			</p>
+		</div>
+		<div>
+			<h4>在线人数{{userCount}}人</h4>
+			<ul>
+				<li ng-repeat="user in userList track by $index">
+					<span>{{user}}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+

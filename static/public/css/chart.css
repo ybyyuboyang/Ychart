@@ -1,0 +1,12 @@
+.navbar{background: #388CA4;border: none;}
+.navbar-header a{color: #E6F2F8;}
+.room-box{margin-top: 100px;}
+.messages{border: 1px solid #ccc;padding: 10px;margin-bottom: 20px;
+	min-height:380px;max-height: 380px;overflow: scroll;}
+.messages div{margin: 15px 0;}
+.messages p{background: #E0EFFB;width: 100%;padding: 5px;display: inline;border-radius: 4px;color: #000;border: 1px solid #C8D9EA;}
+.name-val{width: 40%;}
+.form-horizontal label{font-size: 16px;margin-bottom: 15px;}
+.form-horizontal p{margin-top: 5px;}
+.btn-enter{margin-top: 15px;}
+.footer{border-top: 1px solid #CCC;padding-top: 20px;position: absolute;bottom: 0;width: 100%;}
